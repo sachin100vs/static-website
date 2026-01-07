@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureMind Labs - Lab on Wheels</title>
+    <meta name="description"
+        content="FutureMind Labs brings expert robotics and AI education directly to your school. Lab on Wheels, certified instructors, and world-class curriculum.">
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="ui.js" defer></script>
+    <script type="module" src="script.js?v=3" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">FutureMind <span>Labs</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schools">For Schools</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact" class="btn-primary">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    <span>🚚 We bring the lab to your school</span>
+                </div>
+                <h1>Igniting Innovation in <br><span class="highlight">Every Classroom.</span></h1>
+                <p class="hero-subtitle">Hands-on STEM workshops for 5th graders to engineering graduates. We bring all
+                    the kits and tech directly to your school.</p>
+                <div class="hero-buttons">
+                    <a href="#schools" class="btn-primary">Partner With Us</a>
+                    <a href="#curriculum" class="btn-secondary">View Curriculum</a>
+                </div>
+                <div class="hero-stats-mini">
+                    <span>📦 Free Kits Included</span>
+                    <span class="dot"></span>
+                    <span>🚫 No Lab Required</span>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+                        alt="Students learning robotics" class="hero-img">
+                    <div class="image-overlay">
+                        <p class="overlay-title">Real Projects, Real Skills</p>
+                        <p class="overlay-subtitle">Building the next generation of engineers.</p>
+                    </div>
+                </div>
+                <div class="floating-badge">
+                    <div class="fb-icon">⚙️</div>
+                    <div class="fb-text">
+                        <span class="fb-label">Join us</span>
+                        <span class="fb-value">Learn by Doing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About / Story Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>We noticed that most schools wanted to teach robotics and AI, but the cost of setting up labs and
+                        training staff was prohibitive.</p>
+                    <p>That's why we created a "Lab on Wheels." We bring all the necessary equipment, our expert
+                        instructors, and a world-class curriculum directly to students.</p>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">2025</span>
+                            <span class="stat-label">Founded</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5k+</span>
+                            <span class="stat-label">Students</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15</span>
+                            <span class="stat-label">Cities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="icon">🛡️</div>
+                        <h3>Safety First</h3>
+                        <p>Certified safe electronics kits for all ages.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">🎯</div>
+                        <h3>Goal Oriented</h3>
+                        <p>Every student leaves with a working project.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">❤️</div>
+                        <h3>Passion</h3>
+                        <p>We love building cool stuff just as much as you.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">⚡</div>
+                        <h3>Fast Learning</h3>
+                        <p>Accelerated bootcamps designed for impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum" id="curriculum">
+        <div class="container">
+            <div class="section-header center">
+                <span class="tagline">OUR CURRICULUM</span>
+                <h2 class="section-title">A Learning Path for Every Stage</h2>
+                <p>We tailor our workshops to the age and skill level of your students, ensuring maximum engagement and
+                    learning outcomes.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">View All</button>
+                <button class="filter-btn" data-filter="junior">Junior (5th-10th)</button>
+                <button class="filter-btn" data-filter="senior">Senior (11th-12th)</button>
+                <button class="filter-btn" data-filter="college">Graduate (College)</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="curriculum-grid">
+                <!-- Card 1: Junior Innovators -->
+                <div class="course-card" data-category="junior">
+                    <span class="grade-tag">5th - 10th Grade</span>
+                    <div class="card-icon">🤖</div>
+                    <h3>Junior Innovators</h3>
+                    <p>Sparking curiosity with basic electronics and block-based coding. Kids build their first moving
+                        robots.</p>
+                    <div class="topics">
+                        <span class="topic">Basic Circuits</span>
+                        <span class="topic">Block Coding</span>
+                        <span class="topic">Simple Robotics</span>
+                        <span class="topic">Sensors</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="Syllabus for class 5.pdf" target="_blank" class="link-btn">View Syllabus</a>
+                    </div>
+                </div>
+
+                <!-- Card 2: Tech Explorers -->
+                <div class="course-card" data-category="senior">
+                    <span class="grade-tag">11th - 12th Grade</span>
+                    <div class="card-icon">&lt;/&gt;</div>
+                    <h3>Tech Explorers</h3>
+                    <p>Deep diving into Arduino, Python, and IoT. Students solve real-world problems with technology.
+                    </p>
+                    <div class="topics">
+                        <span class="topic">Arduino Programming</span>
+                        <span class="topic">IoT Basics</span>
+                        <span class="topic">Python for AI</span>
+                        <span class="topic">3D Printing</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="Syllabus-10.pdf" target="_blank" class="link-btn">View Syllabus</a>
+                    </div>
+                </div>
+
+                <!-- Card 3: Engineering Pro -->
+                <div class="course-card" data-category="college">
+                    <span class="grade-tag">College & Graduates</span>
+                    <div class="card-icon">⚙️</div>
+                    <h3>Engineering Pro</h3>
+                    <p>Industry-ready skills in Embedded Systems, PCB Design, and Advanced AI/ML algorithms.</p>
+                    <div class="topics">
+                        <span class="topic">Embedded C</span>
+                        <span class="topic">PCB Design</span>
+                        <span class="topic">Advanced AI/ML</span>
+                        <span class="topic">ROS (Robot OS)</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="#" class="link-btn disabled">View Syllabus</a>
+                    </div>
+                </div>
+
+                <!-- Card 4: Mini Makers -->
+                <div class="course-card" data-category="junior">
+                    <span class="grade-tag">5th - 10th Grade</span>
+                    <div class="card-icon">💡</div>
+                    <h3>Mini Makers</h3>
+                    <p>A fun introduction to mechanics and simple machines using LEGO and motors.</p>
+                    <div class="topics">
+                        <span class="topic">Gears & Pulleys</span>
+                        <span class="topic">Motors</span>
+                        <span class="topic">Solar Power</span>
+                        <span class="topic">DIY Crafts</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="Syllabus 6.pdf" target="_blank" class="link-btn">View Syllabus</a>
+                    </div>
+                </div>
+
+                <!-- Card 5: Drone Mastery -->
+                <div class="course-card" data-category="senior">
+                    <span class="grade-tag">11th - 12th Grade</span>
+                    <div class="card-icon">🚁</div>
+                    <h3>Drone Mastery</h3>
+                    <p>Learn the physics of flight, assemble quadcopters, and program autonomous flight paths.</p>
+                    <div class="topics">
+                        <span class="topic">Aerodynamics</span>
+                        <span class="topic">Flight Controllers</span>
+                        <span class="topic">Calibration</span>
+                        <span class="topic">Remote Piloting</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="#" class="link-btn disabled">View Syllabus</a>
+                    </div>
+                </div>
+
+                <!-- Card 6: Computer Vision -->
+                <div class="course-card" data-category="college">
+                    <span class="grade-tag">College & Graduates</span>
+                    <div class="card-icon">🧠</div>
+                    <h3>Computer Vision</h3>
+                    <p>Build systems that see. Implement object detection and facial recognition using OpenCV.</p>
+                    <div class="topics">
+                        <span class="topic">OpenCV</span>
+                        <span class="topic">Neural Networks</span>
+                        <span class="topic">Image Processing</span>
+                        <span class="topic">Real-Time Detection</span>
+                    </div>
+                    <div class="card-footer">
+                        <span class="duration">Duration: 2-5 Days</span>
+                        <a href="#" class="link-btn disabled">View Syllabus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Schools / Partner Section -->
+    <section class="schools" id="schools">
+        <div class="container">
+            <div class="section-header">
+                <span class="tagline">FOR SCHOOLS & COLLEGES</span>
+                <h2 class="section-title">Why Partner With Us?</h2>
+                <p>Setting up a robotics lab is expensive and requires constant maintenance. We solve this by bringing
+                    the experts, the equipment, and the curriculum to you.</p>
+            </div>
+
+            <div class="schools-grid">
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <h3>No Infrastructure Cost</h3>
+                            <p>We bring all kits, laptops (if needed), and tools. Use your existing classrooms.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <h3>Industry-Standard Tech</h3>
+                            <p>We teach what companies use: Arduino, Raspberry Pi, Python, and Tensor Flow.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <h3>Certified Instructors</h3>
+                            <p>Our team consists of working engineers and passionate educators.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="check-icon">✓</div>
+                        <div>
+                            <h3>Customizable Workshops</h3>
+                            <p>From 1-day bootcamps to semester-long courses, we fit your schedule.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="school-stats">
+                    <div class="stat-card">
+                        <div class="card-icon">✅</div>
+                        <h3>4</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-icon">🏫</div>
+                        <h3>0</h3>
+                        <p>Partner Schools</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-icon">👥</div>
+                        <h3>0</h3>
+                        <p>Students Taught</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="card-icon">🤖</div>
+                        <h3>100%</h3>
+                        <p>Future Ready</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team / Resumes Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title center">Meet Our Lead Instructors</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar">S</div>
+                    <h3>Shinta Ks</h3>
+                    <p class="role">Lead Instructor</p>
+                    <a href="shinta resume.pdf" target="_blank" class="download-btn">Download Resume</a>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">S</div>
+                    <h3>Sachin Vs</h3>
+                    <p class="role">Embedded system engineer</p>
+                    <a href="Resume sachin.pdf" target="_blank" class="download-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Transform Your Classroom?</h2>
+                    <p>We are currently onboarding partner schools for the upcoming academic year. Contact us for a free
+                        demo session or a detailed syllabus walk-through.</p>
+
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <span class="info-label">Email Us</span>
+                            <a href="mailto:futuremindlabs.info@gmail.com"
+                                class="info-link">futuremindlabs.info@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📱</span>
+                        <div>
+                            <span class="info-label">Call Us</span>
+                            <a href="tel:+919876543210" class="info-link">+91 98765 43210</a>
+                            <a href="tel:+918129849128" class="info-link">+91 81298 49128</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <span class="info-label">Location</span>
+                            <span class="info-text">We come to you! (Lab on Wheels)</span>
+                        </div>
+                    </div>
+
+                    <div class="startup-note">
+                        <h4>Startup Note</h4>
+                        <p>"We operate as a mobile educational unit. This keeps our overheads low and ensures your
+                            students get the maximum value from our workshops."</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3 class="form-title">Request a Proposal</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Role</label>
+                                <input type="text" id="role" name="role" placeholder="Principal / HOD">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="institution">Institution Name</label>
+                            <input type="text" id="institution" name="institution" required
+                                placeholder="School or College Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program">Interested Program</label>
+                            <select id="program" name="program">
+                                <option value="Robotics Workshop">Robotics Workshop</option>
+                                <option value="IoT Bootcamp">IoT Bootcamp</option>
+                                <option value="Embedded Systems">Embedded Systems Course</option>
+                                <option value="AI Beginners">AI for Beginners</option>
+                                <option value="Custom">Custom Requirement</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required
+                                placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary full-width">Send Request 🚀</button>
+                        <p id="formStatus" class="status-msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">FutureMind<span class="highlight">.</span>Labs</a>
+                <p>Bringing hands-on STEM education to the next generation of innovators.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#curriculum">Curriculum</a></li>
+                    <li><a href="#schools">For Schools</a></li>
+                    <li><a href="#contact">Book Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-link" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FutureMind Labs. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
